@@ -1,0 +1,79 @@
+import Image from "next/image";
+import { FaFacebookF, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { cn } from "@/lib/utils";
+
+export default function Footer() {
+  return (
+    <footer
+      className={cn(
+        "relative overflow-hidden bg-[#0c0d1d]/60 backdrop-blur-xl border-t border-white/5 shadow-2xl shadow-black/50 text-white py-10 font-sans"
+      )}
+    >
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[100px]" />
+        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-blue-600/20 rounded-full blur-[100px]" />
+        <div className="absolute bottom-1/2 left-1/3 w-64 h-64 bg-purple-700/10 rounded-full blur-[80px]" />
+      </div>
+
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+        <div className="flex items-center gap-10">
+          <a
+            href="https://www.utcluj.ro/"
+            className="hover:opacity-80 transition-opacity"
+          >
+            <Image
+              src="/images/logo/utalb.png"
+              alt="UTCN Logo"
+              width={96}
+              height={96}
+              className="w-auto h-auto max-w-24"
+            />
+          </a>
+          <a
+            href="https://osut.org/"
+            className="hover:opacity-80 transition-opacity"
+          >
+            <Image
+              src="/images/logo/osutalb.png"
+              alt="OSUT Logo"
+              width={96}
+              height={96}
+              className="w-auto h-auto max-w-24"
+            />
+          </a>
+          <a href="https://infotech.osut.org/">
+            <Image
+              src="/images/logo/infotech.png"
+              alt="InfoTech Logo"
+              width={96}
+              height={96}
+              className="w-auto h-auto max-w-24"
+            />
+          </a>
+        </div>
+        <div className="flex space-x-6 text-2xl mt-4 md:mt-0">
+          <a
+            href="https://www.facebook.com/infotech.osut"
+            className="text-purple-300 hover:text-purple-400 transition-colors"
+          >
+            <FaFacebookF className="hover:scale-110 transition-transform" />
+          </a>
+          <a
+            href="https://www.instagram.com/infotech.osut/"
+            className="text-purple-300 hover:text-purple-400 transition-colors"
+          >
+            <FaInstagram className="hover:scale-110 transition-transform" />
+          </a>
+          <a
+            href="mailto:infotech.osutcluj@gmail.com"
+            className="text-purple-300 hover:text-purple-400 transition-colors"
+          >
+            <FaEnvelope className="hover:scale-110 transition-transform" />
+          </a>
+        </div>
+      </div>
+
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-purple-500/50 to-transparent"></div>
+    </footer>
+  );
+}
