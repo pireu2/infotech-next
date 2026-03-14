@@ -9,7 +9,7 @@ InfoTech is a high-performance, engaging website designed for OSUT Cluj (Organiz
 - **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
 - **UI Library:** [shadcn/ui](https://ui.shadcn.com/) (Radix UI)
 - **Animations:** [Framer Motion](https://www.framer.com/motion/)
-- **Internationalization:** Route-based (\`/en\`, \`/ro\`) with server-side dictionary loading
+- **Internationalization:** Route-based (`/en`, `/ro`) with server-side dictionary loading
 - **Deployment:** [Cloudflare Pages](https://pages.cloudflare.com/)
 
 ## 🛠️ Getting Started
@@ -43,11 +43,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 📁 Project Structure
 
-- \`src/app/[locale]\` - Main page routing and layout with i18n support.
-- \`src/components\` - Reusable UI components (Hero, About, Events, etc.).
-- \`src/data\` - Data for translations, events, and team members.
-- \`src/i18n\` - Internationalization configuration and dictionary loaders.
-- \`src/types\` - TypeScript interfaces and types.
+- `src/app/[locale]` - Main page routing and layout with i18n support.
+- `src/components` - Reusable UI components (Hero, About, Events, etc.).
+- `src/data` - Data for translations, events, and team members.
+- `src/i18n` - Internationalization configuration and dictionary loaders.
+- `src/types` - TypeScript interfaces and types.
 
 ## 🌍 Internationalization (i18n)
 
@@ -56,7 +56,7 @@ This project uses a strict i18n implementation. **No raw strings** should be har
 To add or modify text:
 
 1. Update [src/data/translations.json](src/data/translations.json).
-2. Use the \`dictionary\` prop in your components to access the translations.
+2. Use the `dictionary` prop in your components to access the translations.
 
 ## 📜 License
 
