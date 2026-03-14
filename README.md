@@ -22,20 +22,22 @@ InfoTech is a high-performance, engaging website designed for OSUT Cluj (Organiz
 ### Installation
 
 1. Clone the repository:
-   \`\`\`bash
+
+   ```bash
    git clone https://github.com/osutcluj/infotech-next.git
    cd infotech-next
-   \`\`\`
+   ```
 
 2. Install dependencies:
-   \`\`\`bash
+
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. Run the development server:
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
