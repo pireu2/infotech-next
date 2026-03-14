@@ -1,34 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# InfoTech Next
 
-## Getting Started
+InfoTech is a high-performance, engaging website designed for OSUT Cluj (Organizația Studenților din Universitatea Tehnică) to attract students, showcase career events, and connect with sponsors.
 
-First, run the development server:
+## 🚀 Teck Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Framework:** [Next.js 16+](https://nextjs.org/) (App Router & Turbopack)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **UI Library:** [shadcn/ui](https://ui.shadcn.com/) (Radix UI)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Internationalization:** Route-based (\`/en\`, \`/ro\`) with server-side dictionary loading
+- **Deployment:** [Cloudflare Pages](https://pages.cloudflare.com/)
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js 20+
+- npm / pnpm / yarn
+
+### Installation
+
+1. Clone the repository:
+   \`\`\`bash
+   git clone https://github.com/osutcluj/infotech-next.git
+   cd infotech-next
+   \`\`\`
+
+2. Install dependencies:
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+3. Run the development server:
+   \`\`\`bash
+   npm run dev
+   \`\`\`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-## Learn More
+- \`src/app/[locale]\` - Main page routing and layout with i18n support.
+- \`src/components\` - Reusable UI components (Hero, About, Events, etc.).
+- \`src/data\` - Data for translations, events, and team members.
+- \`src/i18n\` - Internationalization configuration and dictionary loaders.
+- \`src/types\` - TypeScript interfaces and types.
 
-To learn more about Next.js, take a look at the following resources:
+## 🌍 Internationalization (i18n)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project uses a strict i18n implementation. **No raw strings** should be hardcoded in components. All text is managed in [src/data/translations.json](src/data/translations.json).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To add or modify text:
 
-## Deploy on Vercel
+1. Update [src/data/translations.json](src/data/translations.json).
+2. Use the \`dictionary\` prop in your components to access the translations.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📜 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Built with ❤️ by **OSUT Cluj**.
